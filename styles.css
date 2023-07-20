@@ -2,10 +2,14 @@ html {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
+@font-face {
+    font-family: RaleWay;
+    src: url(Font/RaleWay/static/Raleway-Medium.ttf);
+}
 body{
     margin: 0;
-    color: rgb(33, 33, 58);
-    background-color: rgb(252, 252, 252);
+    color: rgb(219, 220, 221);
+    background-color: rgb(30, 30, 48);
 }
 
 header {
@@ -26,9 +30,9 @@ nav{
     position: fixed;
     height: 100%;
     width: 300px;
-    border-right: 3px rgb(33, 33, 58) solid;
-    box-shadow: 10px 0 40px rgba(46, 40, 66, 0.144);
-    background-color: rgb(252, 252, 252);
+    border-right: 3px rgb(127, 111, 129) solid;
+    box-shadow: 10px 0 40px rgba(213, 205, 228, 0.144);
+    background-color: rgb(235, 235, 243);
 }
 
 nav ul{
@@ -40,8 +44,7 @@ nav ul{
 
 nav ul li{
     height: 54px;
-    border-radius: 3px;
-    border-top: 1px rgb(33, 33, 58) solid;
+    margin: 0;
     border-bottom: 1px rgb(33, 33, 58) solid;
 }
 
@@ -49,8 +52,9 @@ nav ul li{
     display: block;
     color: rgb(37, 37, 48);
     text-decoration: none;
-    padding: 15px;
     transition: all 200ms;
+    box-sizing: border-box;
+    padding: 16px;
 }
 
 .nav-link:hover{
@@ -61,7 +65,8 @@ nav ul li{
 nav header{
     text-align: center;
     padding: 15px 0;
-    border-bottom: 2px black solid;
+    border-bottom: 2px rgb(33, 33, 58) solid;
+    color: rgb(37, 37, 48);
 }
 /* main */
 main {
@@ -71,6 +76,10 @@ main {
 
 h3, h2{
     margin: 0.6rem 0;
+}
+
+header, h3, h2{
+    font-family: 'RaleWay';
 }
 
 section:first-of-type ~ section{
@@ -84,12 +93,20 @@ p {
 
 code{
     font-size: 14px;
+    overflow: auto;
 }
 
 .example{
     border-radius: 3px;
-    background-color: rgb(210, 213, 224);
+    background-color: rgb(106, 89, 121);
     padding:15px 20px;
+    color: rgb(33, 33, 58);
+}
+
+.example p code {
+    background-color: rgb(33, 33, 58);
+    padding: 1px 2px;
+    border-radius: 3px;
 }
 
 header {
@@ -107,6 +124,7 @@ header {
     background-color:rgb(33, 33, 58);
 }
 
+
 code.error{
     border-left: 5px rgb(255, 74, 74) solid !important;
 }
@@ -116,21 +134,30 @@ code.output{
 }
 
 p code, li code{
-    background-color: rgb(221, 223, 235);
-    border-radius: 1px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(106, 89, 121);
+    border-radius: 3px;
+    padding: 1px 2px;
 
 }
 
 .example p{
     margin: 7px;
+    color: rgb(250, 253, 255);
 }
 
 .comment{
-    color: rgb(153, 147, 147);
+    color: rgb(133, 158, 139);
 }
 
 #References a {
-    color: rgb(33, 33, 58);
+    color: rgb(219, 220, 221);
+}
+
+hr {
+    height: 4px;
+    border: none;
+    background-color: rgb(63, 54, 88);
 }
 
 @media (max-width:815px){
@@ -151,7 +178,7 @@ p code, li code{
         height: 245px;
         top: 0;
         border-right: 0;
-        border-bottom: 3px rgb(33, 33, 58) solid;
+        border-bottom: 3px rgb(115, 115, 117) solid;
     }
     
     nav ul{
