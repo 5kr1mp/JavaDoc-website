@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav id="navbar">
+        <header>Java Documentation</header>
+        <ul>
+            <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+            <li><a class="nav-link" href="#Java_Syntax">Java Syntax</a></li>
+            <li><a class="nav-link" href="#Java_Output">Java Output</a></li>
+            <li><a class="nav-link" href="#Java_Comments">Java Comments</a></li>
+            <li><a class="nav-link" href="#Java_Variables">Java Variables</a></li>
+            <li><a class="nav-link" href="#References">References</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section id="Introduction" class="main-section">
+            <header>Introduction</header>
+            <h3>What is Java?</h3>
+            <p>Java is a popular programming language, created in 1955.</p>
+            <p>It is owned by Oracle, and more than 3 billion devices run Java.</p>
+            <p>It is used for: </p>
+            <ul>
+                <li>Mobile Applications (specially Android apps)</li>
+                <li>Desktop Applications</li>
+                <li>Web Applications</li>
+                <li>Web Servers and application servers</li>
+                <li>Games</li>
+                <li>Database connection</li>
+                <li>And much, much more!</li>
+            </ul>
+            <hr>
+            <h3>Why Use Java?</h3>
+            <ul>
+                <li>Java works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc.</li>
+                <li>It is one of the most popular programming language in the world</li>
+                <li>It has a large demand in the current job market</li>
+                <li>It is easy to learn and simple to use</li>
+                <li>It is open-source and free</li>
+                <li>It is secure, fast and powerful</li>
+                <li>It has a huge community support (tens of millions of developers)</li>
+            </ul>
+        </section>
+        <section id="Java_Syntax" class="main-section">
+            <header>Java Syntax</header>
+            <h2>"Hello World"</h2>
+            <p>"Hello World" are computer programs that displays a "Hello World" message.</p>
+            <p>In Java, you write a "Hello World" program with the following code: </p>
+            <div class="example">
+                <code>
+                    public class Main {
+                        public static void main(String[] args){
+                            System.out.println("Hello World");
+                        }
+                    }
+                </code>
+            </div>
+            <p>In order to understand Java's syntax and how Java programs work, we must disect the code above into three parts: </p>
+            <ul>
+                <li>Java Class</li>
+                <li>The main Method; and</li>
+                <li>System.out.println()</li>
+            </ul>
+            <hr>
+            <h3>Java Class</h3>
+            <p>Every line of code that runs in Java must be inside a <code>class</code>. In our example, we named the class Main. A class should always start with an uppercase letter, and must match the file name.</strong></stron></p>
+            <p>
+                <strong>Note: </strong> Java is case-sensitive: "MyClass" and "myclass" has different meaning.
+            </p>
+            <p>To declare a class, write the keyword "class" and then the name of the class. You can add various keywords to a class such as "public" to customize the class for specific purposes.</p>
+            <p>After declaring the class, there should two curly braces "{}" to mark the start and end of a block of code. Everything written between those two curly braces is part of the class.</p>
+
+            <div class="example">
+                <code>
+                    class Main { }
+                </code>
+            </div>
+            <hr>
+            <h3>The main Method</h3>
+            <p>Inside our Main class, is a <code>main()</code> method.The <code>main()</code> method is required and you will see it in every Java program.</p>
+            <div class="example">
+                <code>public static void main(String[] args) { }</code>
+            </div>
+            <p>Any code inside the curly braces of the main method will be executed.</p>
+            <p>If you're new to Java, don't worry about the keywords and what they mean for now. You'll learn about them later on, bit by bit.</p>
+            <p>Just remember that a Java program must have a <code>class</code>, and a <code>main()</code> method which contains all the executable code of the program.</p>
+            <hr>
+            <h3>System.out.println()</h3>
+            <p>Inside the main method, the <code>println()</code> method is used to display a line of text to the screen.</p>
+            <div class="example">
+                <code>
+                    public static void main(String[] args){
+                        System.out.println("Hello World");
+                    }
+                </code>
+            </div>
+            <p><code>System</code> is a built-in Java class that contains useful members, such as <code>out</code>, which is short for "output". The <code>println()</code> method, short for "print line", is used to print a value to the screen (or a file).</p>
+            <p>Each code statement must end with a semicolon (<code>;</code>).</p>
+        </section>
+        <section id="Java_Output" class="main-section">
+            <header>Java Output</header>
+            <h2>Print Text</h2>
+            <p>To print a text, you can use the <code>println()</code> method to output values or print text in Java.</p>
+            <div class="example">
+                <code>
+                    System.out.println("Hello World");
+                </code>
+            </div>
+            <p>You can add as many <code>println()</code> methods as you want. Note that it will add a new line for each method.</p>
+            <div class="example">
+                <code>
+                    System.out.println("Hello World!");
+                    System.out.println("I am Learning Java.");
+                    System.out.println("It is awesome!");
+                </code>
+            </div>
+            <hr>
+            <h3>Double Quotes</h3>
+            <p>When working with text, it must be wrapped inside double quotations marks <code>""</code>.</p>
+            <p>If you forget the double quotes, an error occurs: </p>
+            <div class="example">
+                <code>
+                    System.out.println("This sentence will work!");
+                </code>
+                <code class="error">
+                    System.out.println(This sentence will not work);
+                </code>
+            </div>
+            <hr>
+            <h3>The Print() Method</h3>
+            <p>There is also a <code>print()</code> method, which is similar to <code>println()</code>.</p>
+            <p>The only difference is that it does not insert a new line at the end of the output: </p>
+            <div class="example">
+                <code>
+                    System.out.print("Hello World!");
+                    System.out.print("I will print on the same line.");
+                </code>
+                <p>Output:</p>
+                <code class="output">
+                    Hello World!I will print on the same line.
+                </code>
+            </div>
+            <hr>
+            <h2>Print Numbers</h2>
+            <p>You can also print numbers in Java using the <code>println()</code> method.</p>
+            <p>However, unlike, text, we don't put numbers inside double quotes.</p>
+            <div class="example">
+                <code>
+                    System.out.println(3);
+                    System.out.println(358);
+                    System.out.println(50000);
+                </code>
+            </div>
+            <p>You can also perform mathematical calculations inside the <code>println()</code> method:</p>
+            <div class="example">
+                <code>
+                    System.out.println(3 + 3);
+                </code>
+
+                <code>
+                    System.out.println(3 * 4);
+                </code>
+            </div>
+        </section>
+        <section id="Java_Comments" class="main-section">
+            <header>Java Comments</header>
+            <p>Comments can be used to explain Java code, and to make it more readable by users. It can also be used to prevent execution when testing alternative code.</p>
+            <hr>
+            <h3>Single-line Comments</h3>
+            <p>Single-line comments starts with two forward slashes (<code>//</code>)</p>
+            <p>Any text between <code>//</code> and the end of line is ignored by Java during execution.</p>
+            <div class="example">
+                <code>
+                    <span class="comment">// This is a comment</span>
+                    System.out.println("Hello World");
+                </code>
+
+                <code class="output">
+                    Hello World
+                </code>
+            </div>
+            <hr>
+            <h3>Multi-line Comments</h3>
+            <p>Multi-line comments start with <code>/*</code> and ends with <code>*/</code>.</p>
+            <p>Any text between <code>/*</code> and <code>*/</code> will be ignored by Java.</p>
+            <div class="example">
+                <code>
+                    <span class="comment">/* The code below will print the words Hello World
+                        to the screen, and it is amazing */
+                    </span>
+                    System.out.println("Hello World");
+                </code>
+            </div>
+        </section>
+        <section id="Java_Variables" class="main-section">
+            <header>Java Variables</header>
+            <p>Variables are containers for storing data values.</p>
+            <p>In Java, there are different <strong>types</strong> of variables, for example: </p>
+            <ul>
+                <li><code>String</code> - stores text, such as "Hello". String values are surrounded by double quotes</li>
+                <li><code>int</code> - stores integers (whole numbers), without decimals, such as 123 or -123</li>
+                <li><code>float</code> - stores floating point numbers, with decimals, such as 19.99 or -18.34</li>
+                <li><code>char</code> - stores single characters, such as 'a' or 'B'. Char values are surrounded by single quotes</li>
+                <li><code>boolean</code> - stores values with two states: true or false</li>
+            </ul>
+            <hr>
+            <h3>Declaring Variables</h3>
+            <p>To create a variable, you must specify the type and assign it a value: </p>
+            <div class="example">
+                <code>type variableName = value;</code>
+            </div>
+            <p>Where <em>type</em> is one of Java's types (such as <code>int</code> or <code>String</code>, and <em>variableName</em> is the name of the variable (such as <strong>x</strong> or <strong>name</strong>). The <strong>equal sign</strong> is used to assign values to the variable.</p>
+            <p>To create a variable that should store text, look at the following example: </p>
+            <div class="example">
+                <code>
+                    String name = "John";
+                    System.out.println(name);
+                </code>
+                <p>The code creates a variable called <strong>name</strong> of type <code>String</code> and assign it the value <strong>"John"</strong></p>
+            </div>
+            <p>To create a variable that should store a number, look at the following example: </p>
+            <div class="example">
+                <code>
+                    int myNum = 15;
+                    System.out.println(myNum);
+                </code>
+                <p>The code creates a variable called <strong>myNum</strong> of type <code>int</code> and assign it the value <strong>15</strong></p>
+            </div>
+            <p>You can also declare a variable without assigning a value, and assign the value later: </p>
+            <div class="example">
+                <code>
+                    int myNum;
+                    myNum = 15;
+                    System.out.println(myNum);
+                </code>
+            </div>
+            <p>You can assign new value to an existing variable, and it will overwrite the previous value: </p>
+            <div class="example">
+                <code>
+                    int myNum = 15;
+                    myNum = 20; //myNum is now 20
+                    System.out.println(myNum);
+                </code>
+            </div>
+            <hr>
+            <h3>Other Types</h3>
+            <p>A demonstration on how to declare variables of other types: </p>
+            <div class="example">
+                <code>
+                    int myNum = 5;
+                    float myFloatNum = 5.99f;
+                    char myLetter = 'D';
+                    boolean myBool = true;
+                    String myText = "Hello";
+                </code>
+            </div>
+        </section>
+        <section id="References" class="main-section">
+            <header>References</header>
+            <ul>
+                <li><a href="https://www.w3schools.com/java/default.asp">www.w3schools.com</a></li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
